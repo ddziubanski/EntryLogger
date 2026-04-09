@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Mason Hart",
+    "role": "Director",
+    "icon": "🧑‍💼"
+  },
+  {
+    "id": 2,
+    "name": "Riley Chen",
+    "role": "Network Manager",
+    "icon": "🧑‍💻"
+  },
+  {
+    "id": 3,
+    "name": "Jordan Patel",
+    "role": "IT Tech 1",
+    "icon": "👨‍💻"
+  },
+  {
+    "id": 4,
+    "name": "Casey Brooks",
+    "role": "IT Tech 1",
+    "icon": "👨‍💻"
+  },
+  {
+    "id": 5,
+    "name": "Avery Nguyen",
+    "role": "IT Tech 1",
+    "icon": "👨‍💻"
+  }
+]

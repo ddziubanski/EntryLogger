@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twinpine Casino & Hotel | EntryLogger</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <h1>Twinpine Casino & Hotel</h1>
+      <h2>EntryLogger</h2>
+      <p>Tap a staff icon to log entry or exit. Export the report whenever you need it.</p>
+      <p class="device-ip" id="deviceIp">Server IP: loading...</p>
+      <button id="fullScreenBtn" class="fullscreen-btn">Enter Full Screen</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel staff-panel">
+      <h2>Staff Members</h2>
+      <div class="staff-grid" id="staffGrid"></div>
+    </section>
+
+    <section class="panel clock-panel">
+      <h2>Current Time</h2>
+      <div class="clock-display">
+        <div class="clock-label">Currently</div>
+        <div class="clock-time" id="clockTime">--:--:--</div>
+        <div class="clock-date" id="clockDate">--/--/--</div>
+      </div>
+    </section>
+
+    <section class="panel history-panel">
+      <div class="panel-header">
+        <h2>Activity Log</h2>
+        <div class="actions">
+          <button id="exportCsv">Export CSV</button>
+          <button id="clearLog">Clear Log</button>
+        </div>
+      </div>
+      <div class="log-filter-row">
+        <label>
+          Start date
+          <input type="date" id="filterStartDate" />
+        </label>
+        <label>
+          End date
+          <input type="date" id="filterEndDate" />
+        </label>
+        <button id="viewAll">View Current</button>
+      </div>
+      <div class="report-reminder" id="reportReminder"></div>
+      <div class="filter-summary" id="filterSummary"></div>
+      <div class="history-list" id="historyList"></div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    Footer goes here
+  </footer>
+
+  <div class="modal hidden" id="reasonModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="close-btn" id="closeModal">×</button>
+      <h2 id="modalTitle">Why is entry needed?</h2>
+      <p>Secure area: Server room</p>
+      <div class="reason-buttons" id="reasonButtons"></div>
+      <button class="secondary" id="skipReason">Other / Skip</button>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="ticketModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card ticket-modal-card">
+      <button class="close-btn" id="closeTicketModal">×</button>
+      <h2>Is a ticket number available?</h2>
+      <div class="ticket-actions">
+        <button type="button" id="ticketYes">Yes</button>
+        <button type="button" id="ticketNo">No</button>
+      </div>
+      <div class="ticket-input-group hidden" id="ticketInputGroup">
+        <label for="ticketNumber">Ticket number</label>
+        <input id="ticketNumber" type="text" maxlength="5" inputmode="numeric" autocomplete="off" />
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
