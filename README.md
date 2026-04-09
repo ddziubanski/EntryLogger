@@ -1,6 +1,6 @@
 # EntryLogger
 
-I needed a quick log file foe entry, threw something together with AI.. Hopefully I  can save you some time.
+I needed a quick log file for entry, threw something together with AI.. Hopefully I  can save you some time.
 Make it Yours!
 
 A Flask-backed app for logging secure-area server room visits. 
