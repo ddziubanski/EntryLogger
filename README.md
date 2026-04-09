@@ -36,6 +36,20 @@ A Flask-backed app for logging secure-area server room visits. Internal Use Only
 - **Fullscreen Mode**: Distraction-free fullscreen interface for dedicated displays
 - **Responsive Design**: Works on desktop and mobile devices
 
+## Screenshots
+
+Add screenshots to `docs/screenshots/` using these filenames:
+
+- `sample-screen-1.png`
+- `sample-screen-2.png`
+- `sample-screen-3.png`
+
+Once added, they will render automatically here:
+
+![Sample Screen 1](docs/screenshots/sample-screen-1.png)
+![Sample Screen 2](docs/screenshots/sample-screen-2.png)
+![Sample Screen 3](docs/screenshots/sample-screen-3.png)
+
 ## Use
 
 1. Install the app and dependencies:
