@@ -1,7 +1,6 @@
 # EntryLogger
 
-A Flask-backed app for logging secure-area server room visits. Internal Use Only
-
+A Flask-backed app for logging secure-area server room visits. 
 ## Quick Start
 
 1. Install dependencies and app environment:
