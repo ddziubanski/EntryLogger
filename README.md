@@ -45,12 +45,16 @@ Add screenshots to `docs/screenshots/` using these filenames:
 - `sample-screen-1.png`
 - `sample-screen-2.png`
 - `sample-screen-3.png`
+- `sample-screen-4.png` (entry reasons modal)
+- `sample-screen-5.png` (ticket entry modal)
 
 Once added, they will render automatically here:
 
 ![Sample Screen 1](docs/screenshots/sample-screen-1.png)
 ![Sample Screen 2](docs/screenshots/sample-screen-2.png)
 ![Sample Screen 3](docs/screenshots/sample-screen-3.png)
+![Sample Screen 4 - Entry Reasons](docs/screenshots/sample-screen-4.png)
+![Sample Screen 5 - Ticket Entry](docs/screenshots/sample-screen-5.png)
 
 ## Use
 
