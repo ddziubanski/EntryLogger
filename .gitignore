@@ -1,0 +1,14 @@
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.venv-test/
+
+# Runtime data
+*.db
+archives/*.db
+
+# Local overrides
+.env
